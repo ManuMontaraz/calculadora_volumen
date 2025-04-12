@@ -59,7 +59,7 @@ VOLUME_FORM.addEventListener("submit", (event)=>{
             ListResults.insertAdjacentHTML(
                 "beforeend",
                 `<li>
-                    <p><b class="write_name" name="${Name}"></b>: <span class="write_value" value="${Value}">ml.</span></p>
+                    <p><b class="write_name" name="${Name}"></b>: <span class="write_value" value="${Value}">mg.</span></p>
                 </li>`
             )
         }
@@ -120,7 +120,7 @@ function calculate_volume(){
     const Material = VOLUME_FORM.querySelector("#material")
     const NameMaterial =  Material.selectedOptions[0].textContent
     const DensityMaterial = Material.selectedOptions[0].getAttribute("density")
-    const Volume = VOLUME_FORM.querySelector("#water_ml").value
+    const Volume = VOLUME_FORM.querySelector("#water_mg").value
     const SecondMaterial = Material.selectedOptions[0].getAttribute("second-material")
     const PercentageSecondMaterial = VOLUME_FORM.querySelector("#percentage_second_material").value
 
